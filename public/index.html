@@ -1,39 +1,29 @@
 <!DOCTYPE html>
-
-<html>
-
-	<head>
-		<title>Clementine.js - The elegant and lightweight full stack JavaScript boilerplate.</title>
-		
-		<link href="/public/css/main.css" rel="stylesheet" type="text/css">
-	</head>
-
-	<header>
-		<p>Welcome, <span id="display-name"></span>!</p>
-		<a class="menu" href="/profile">Profile</a>
-		<p>|</p>
-		<a class="menu" href="/logout">Logout</a>
-	</header>
-
-	<body>
-		<div class="container">
-			<img src="/public/img/clementine_150.png" />
-			<br />
-			<p class="clementine-text">Clementine.js</p>
-		</div>
-	
-		<div class="container">
-			<p>You have clicked the button <span id="click-nbr"></span> times.</p>
-			<br />
-			<div class="btn-container">
-				<button type="submit" class="btn btn-add">CLICK ME!</button>
-				<button class="btn btn-delete">RESET</button>
-			</div>
-		</div>
-		
-		<script type="text/javascript" src="common/ajax-functions.js"></script>
-		<script type="text/javascript" src="controllers/clickController.client.js"></script>
-		<script type="text/javascript" src="controllers/userController.client.js"></script>
-	</body>
-
+<html lang="en">
+    <head>
+      <title>Timestamp Microservice</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    </head>
+    
+    <body>
+      <div class="container">
+        <h1> FreeCodeCamp API Basejump: Timestamp Microservice </h1>
+    
+        <ul>
+          <li> 1) You can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)
+            <li> 2) If it does, it returns both the Unix timestamp and the natural language form of that date.
+              <li> 3) If it does not contain a date or Unix timestamp, it returns null for those properties.
+        </ul>
+    
+        <h2>Example usage:</h2>
+            <code>https://fcc-timestamp-35135.herokuapp.com/December%2015,%202015</code>
+            <code>https://fcc-timestamp-35135.herokuapp.com/1450137600</code>
+        <h2>Example output:</h2>
+        <code>
+            {
+              "unix": 1450137600,
+              "natural": "December 15, 2015"
+            }
+      </div>
+    </body>
 </html>
